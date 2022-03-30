@@ -136,7 +136,7 @@ ul li {
 
 #gnb > li {
   float : left;
-  padding-left : 80px;
+  padding-left : 97px;
 }
 
 #gnb > li > a {
@@ -170,7 +170,7 @@ ul li {
 .submenu_right ul {
   float : left;
   text-align: center;
-  width : 180px;
+  width : 202px;
   box-sizing: border-box;
 } 
 
@@ -185,31 +185,28 @@ ul li {
   font-family: 'TmoneyRoundWindRegular';
   color : #765758;
   padding : 8px 0;
-  width : 120px;
+  width : 130px;
 }
+
 
 .brand_sub {
-  padding-left : 25px;
-}
-
-.food_sub {
-  padding-left : 12px;
+  padding-left : 40px;
 }
 
 .product_sub {
-  padding-left : 18px;
+  padding-left : 50px;
 }
 
 .class_sub {
-  padding-left : 30px;
+  padding-left : 60px;
 }
 
 .event_sub {
-  padding-left : 30px;
+  padding-left : 50px;
 }
 
 .dodamkit_sub {
-  padding-left : 50px;
+  padding-left : 65px;
 }
 
 .submenu_right ul li:hover a {
