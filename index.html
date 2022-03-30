@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1380">
+  <title>도담하우스</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  <link href="css/style_index.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <!--AOS-->
+  <link rel="stylesheet" href="css/aos/aos.css">
+  <script src="js/aos/aos.js"></script>
+  
+  <!--슬라이드배너CSS-->
+  <link href="css/banner/slide_autoplay.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/banner/swiper.css">
+  
+  <!--오토슬라이드-->
+  <link rel="stylesheet" type="text/css" href="js/autoslide/slick.css">
+  <link rel="stylesheet" type="text/css" href="js/autoslide/slick-theme_.css">
+  <link rel="stylesheet" type="text/css" href="css/autoslide/style.css">
+ 
+  
+  <!--슬라이드배너js-->
+  <script src="js/banner/swiper.min.js"></script>
+</head>
+<body>
+  <div id="header_wrap">  <!--header s-->
+    <div id="header">
+      <div class="header_top">
+        <ul id="util">
+          <li><a href="javascript:return false;">LOGIN</a></li>
+          <li><a href="javascript:return false;">JOIN</a></li>
+          <li><a href="javascript:return false;"><img src="images/icon/icon_mypage.png"></a></li>
+          <li><a href="javascript:return false;"><img src="images/icon/icon_cart.png"></a></li>
+          <li><a href="javascript:return false;"><img src="images/icon/icon_search.png"></a></li>
+        </ul>
+      </div>
+      <div class="header_bottom">
+        <h1 class="header_logo"><a href="index.html"><img src="images/icon/header_logo.png"></a></h1>
+        <ul id="gnb">
+          <li><a href="sub/sub_brand.html">BRAND</a></li>
+          <li><a href="sub/sub_product.html">PRODUCT</a></li>
+          <li><a href="sub/sub_class.html">CLASS</a></li>
+          <li><a href="sub/sub_event.html">EVENT</a></li>
+          <li><a href="sub/sub_monthly.html">DODAM-KIT</a></li>
+        </ul>
+        <div class="submenu_wrap">
+          <div class="submenu">
+            <div class="submenu_right">
+              <ul class="brand_sub">
+                <li><a href="sub/sub_brand.html">BRAND STORY</a></li>
+                <li><a href="sub/sub_brand.html">SUPPORT</a></li>
+              </ul>
+            
+              <ul class="product_sub">
+                <li><a href="sub/sub_product.html">ALL</a></li>
+                <li><a href="sub/sub_product.html">FOOD</a></li>
+                <li><a href="sub/sub_product.html">PRODUCT</a></li>
+                <li><a href="sub/sub_product.html">ACC</a></li>
+                <li><a href="sub/sub_product.html">STATIONERY</a></li>
+              </ul>
+              <ul class="class_sub">
+                <li><a href="sub/sub_class.html">ABOUT</a></li>
+                <li><a href="sub/sub_class.html">APPLY</a></li>
+              </ul>
+              <ul class="event_sub">
+                <li><a href="sub/sub_event.html">EVENT</a></li>
+                <li><a href="sub/sub_event.html">NOTICE</a></li>
+                <li><a href="sub/sub_event.html">FAQ</a></li>
+              </ul>
+              <ul class="dodamkit_sub">
+                <li><a href="sub/sub_monthly.html">ABOUT</a></li>
+                <li><a href="sub/sub_monthly.html">APPLY</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>   <!--header e-->
+
+
+  <div id="banner">
+    <!--배너 고정슬라이드 js 시작-->
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper" style="max-width:100%;">
+        <div class="swiper-slide"><a href="javascript:return false;"><img src="images/main/banner5.jpg" alt="Product"></a></div>
+        <div class="swiper-slide"><a href="javascript:return false;"><img src="images/main/banner1.jpg" alt="Monthly"></a></div>
+        <div class="swiper-slide"><a href="javascript:return false;"><img src="images/main/banner2.jpg" alt="Event"></a></div>
+        <div class="swiper-slide"><a href="javascript:return false;"><img src="images/main/banner3.jpg" alt="Food"></a></div>
+      </div>
+      <!-- 화살표 버튼 -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- 블릿 버튼 -->
+      <div class="swiper-pagination"></div>
+      </div>
+
+     <script>
+     var swiper = new Swiper('.swiper-container', {
+      autoplay: {
+      delay: 2500,//슬라이드 넘어가는 시간
+      disableOnInteraction: false,
+      },
+      loop: true,//슬라이드 무한반복
+      navigation: {//화살표 버튼
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      },
+      pagination: {//블릿 버튼
+      el: '.swiper-pagination',
+      clickable: true,
+      },
+    });
+    </script>
+    <!--배너 고정슬라이드 js 끝-->
+</div><!--main_banner e-->
+  </div>
+
+
+  <div id="section1_wrap">   <!--section1 s_brand value-->
+    <div id="section1">
+      <div class="title_box">  <!--공통-->
+        <h2 class="title">BRAND VALUE</h2>  <!--공통-->
+      </div>
+      <div class="value value1">
+        <a href="sub/sub_brand.html">
+          <div class="value_img value_img1 "><img src="images/main/section1_dog1.png"></div>
+          <div class="value_text">도담하우스 브랜드 스토리</div>
+        </a>
+      </div>
+      <div class="value value2">
+        <a href="sub/sub_brand.html">
+          <div class="value_img value_img2"><img src="images/main/section1_dog2.png"></div>
+          <div class="value_text">도담키트 정기구독</div>
+        </a>
+      </div>
+      <div class="value value3">
+        <a href="sub/sub_brand.html">
+          <div class="value_img value_img3"><img src="images/main/section1_dog3.png"></div>
+          <div class="value_text">가치 있는 소비생활</div>
+        </a>
+      </div>
+        
+      </div>
+      
+  </div>   <!--section1 s-->
+
+
+  <div id="section2_wrap">   <!--section2 s_best product-->
+    <div id="section2">
+      <div class="title_box">  <!--공통-->
+        <h2 class="title">BEST</h2>  <!--공통-->
+      </div>
+      <div class="best_wrap">
+        <ul>
+          <li>
+            <a href="javascript:return false;">
+              <div class="best_box best1">
+                <img src="images/main/section2_best1.png">
+              </div>
+              <div class="best_box best_hoverbox">
+                <p class="md_title">도담쭈, 데일리스틱</p>
+                <p class="md_price">12,900원</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:return false;">
+              <div class="best_box best2">
+                <img src="images/main/section2_best2.png">
+              </div>
+              <div class="best_box best_hoverbox">
+                <p class="md_title">도담 머그컵</p>
+                <p class="md_price">8,900원</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:return false;">
+              <div class="best_box best3 best_right">
+                <img src="images/main/section2_best3.png">
+              </div>
+              <div class="best_box best_hoverbox best_right">
+                <p class="md_title">도담 스카프<br><br>(코카스파니엘)</p>
+                <p class="md_price">8,000원</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:return false;">
+              <div class="best_box best4">
+                <img src="images/main/section2_best4.png">
+              </div>
+              <div class="best_box best_hoverbox">
+                <p class="md_title">도담 건식사료<br><br>(대형견용)</p>
+                <p class="md_price">25,000원</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:return false;">
+              <div class="best_box best5">
+                <img src="images/main/section2_best5.png">
+              </div>
+              
+            </a>
+          </li>
+          <li>
+            <a href="javascript:return false;">
+              <div class="best_box best6 best_right">
+                <img src="images/main/section2_best6.png">
+              </div>
+              <div class="best_box best_hoverbox best_right">
+                <p class="md_title">도담하우스 에코백</p>
+                <p class="md_price">5,900원</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:return false;">
+              <div class="best_box best7 best_bottom">
+                <img src="images/main/section2_best7.png">
+              </div>
+              <div class="best_box best_hoverbox best_bottom">
+                <p class="md_title">도담하우스 사료그릇</p>
+                <p class="md_price">8,000원</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:return false;">
+              <div class="best_box best8 best_bottom">
+                <img src="images/main/section2_best8.png">
+              </div>
+              <div class="best_box best_hoverbox best_bottom">
+                <p class="md_title">도담 강아지 목줄</p>
+                <p class="md_price">4,500원</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:return false;">
+              <div class="best_box best9 best_right best_bottom">
+                <img src="images/main/section2_best9.png">
+              </div>
+              <div class="best_box best_hoverbox best_right best_bottom">
+                <p class="md_title">도담 습식사료<br><br>(치킨&게맛살)</p>
+                <p class="md_price">3,900원</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>   
+
+
+  <div id="section3_wrap">   <!--section3 s_video-->
+    <div id="section3">
+      <video autoplay loop muted preload="true" width="100%" height="100%">
+        <source src="/media/main_video1.mp4" type="video/mp4">
+      </video>
+    </div>   
+  </div>   <!--section3 e-->
+
+  <div id="section4_wrap">   <!--section4 s_event-->
+    <div id="section4">
+      <div class="title_box">  <!--공통-->
+        <h2 class="title">EVENT</h2>  <!--공통-->
+      </div>
+      <div class="event_box">
+        <ul>
+          <li>
+            <a href="sub/sub_event.html">
+              <img src="images/main/section4_event1.png" class="event1">
+              <img src="images/main/section4_event1_hover.jpg" class="event1_hover">
+            </a>
+          </li>
+          <li>
+            <a href="sub/sub_event.html">
+              <img src="images/main/section4_event2.png" class="event2">
+              <img src="images/main/section4_event2_hover.jpg" class="event2_hover">
+            </a>
+          </li>
+          <li>
+            <a href="sub/sub_event.html">
+              <img src="images/main/section4_event3.png" class="event3">
+              <img src="images/main/section4_event3_hover.jpg" class="event3_hover">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a href="sub/sub_event.html"><div class="event_button button">+MORE</div></a>
+    </div>
+  </div>   <!--section4 e-->
+
+  <div id="section5_wrap">   <!--section5 s_class-->
+    <div id="section5">
+      <div class="class_img" data-aos="fade-up"
+      data-aos-duration="1500"></div>
+      <div class="class_text" data-aos="fade-up"
+      data-aos-duration="1500">
+        <h3>도담하우스 원데이클래스</h3>
+        <p class="class_txt1">(반려동물 동반 가능)</p>
+        <p class="class_txt2">반려동물과 함께 수제간식/케이크를 만들어 보세요!</p>
+        <p class="class_txt2">- 수제간식 클래스 모집<br>- 케이크 클래스</p>
+      </div>
+      <a href="sub/sub_class.html"><div class="class_button button">+MORE</div></a>
+    </div>
+  </div>   <!--section5 e-->
+
+  <div id="section6_wrap">   <!--section6 s_sns-->
+    <div id="section6">
+        <div class="regular slider autobox">
+          <div class="snsbox">
+            <img src="images/main/section6_sns1.png">
+          </div>
+          <div class="snsbox">
+            <img src="images/main/section6_sns2.png">
+          </div>
+          <div class="snsbox">
+            <img src="images/main/section6_sns8.png">
+          </div>
+          <div class="snsbox">
+            <img src="images/main/section6_sns4.png">
+          </div>
+          <div class="snsbox">
+            <img src="images/main/section6_sns5.png">
+          </div>
+          <div class="snsbox">
+            <img src="images/main/section6_sns6.png">
+          </div>
+          <div>
+            <img src="images/main/section6_sns7.png">
+          </div>
+          <div>
+            <img src="images/main/section6_sns3.png">
+          </div>
+          <div class="snsbox">
+            <img src="images/main/section6_sns9.png">
+          </div>
+      </div>
+      <div class="sns_id">
+        <p><a href="javascript:return false;">@dodam_house</a></p>
+      </div>
+    </div>
+  </div>   <!--section6 e-->
+  <!--오토슬라이드js-->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="js/autoslide/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+	$(".regular").slick({infinite: true , /* 맨끝이미지에서 끝나지 않고 다시 맨앞으로 이동 */         
+	slidesToShow: 6, /* 화면에 보여질 이미지 갯수*/        
+	slidesToScroll: 1,  /* 스크롤시 이동할 이미지 갯수 */         
+	autoplay: true, /* 자동으로 다음이미지 보여주기 */         
+	arrows: false, /* 화살표 */         
+	dots: false, /* 아래점 */  
+	cssEase: 'linear',  /* 등속 */       
+	autoplaySpeed:0,/* 다음이미지로 넘어갈 시간 */         
+	speed:8000 , /* 다음이미지로 넘겨질때 걸리는 시간 */         
+	pauseOnHover:true, /* 마우스 호버시 슬라이드 이동 멈춤 */        
+	//vertical:true,/* 세로방향으로 슬라이드를 원하면 추가하기// 기본값 가로방향 슬라이드*/        
+	       });
+
+    });
+</script>
+
+
+  <div id="footer_wrap">   <!--footer s-->
+    <div id="footer">
+      <div class="footer_top">
+        <ul>
+          <li><a href="#">이용약관</a></li>
+          <li>|</li>
+          <li><a href="#">개인정보 처리방침</a></li>
+          <li>|</li>
+          <li><a href="#">이용안내</a></li>
+          <li>|</li>
+          <li><a href="#">공지사항</a></li>
+        </ul>
+      </div>
+      <div class="footer_bottom">
+        <h1 class="footer_logo"><a href="#"><img src="images/icon/footer_logo.png"></a></h1>
+        <div class="footer_textbox">
+          <p>
+            CEO : HYUNJUNG LEETEL : 010-9596-8299<br>
+            E-MAIL : daenghoney@naver.com<br>
+            ADDRESS : DODAMHOUSE, 26, Jungang-daero, Jung-gu, Busan, Republic of Korea<br>
+            BUSINESS LICENCE : 123-45-67890<br>
+            MAIL ORDER LICENSE : 제2022-부산중구-12345호<br>
+          </p>
+          <p>Copyright ⓒ 2022 BY DODAMHOUSE All rights reserved.</p>
+        </div>
+        <div class="footer_iconbox">
+          <ul>
+            <li><a href="javascript:return false;"><img src="images/icon/footer_icon_kakao.png"></a></li>
+            <li><a href="javascript:return false;"><img src="images/icon/footer_icon_insta.png"></a></li>
+            <li><a href="javascript:return false;"><img src="images/icon/footer_icon_twitter.png"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>   <!--footer e-->
+
+  </div>
+</body>
+
+<script>
+  AOS.init();
+ $("img[src*='cfile'][src^='http']").attr("data-aos", "fade-up");  // 글에 있는 사진만 애니메이션 추가
+</script>
+
+</html>

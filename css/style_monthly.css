@@ -1,0 +1,526 @@
+* {
+  margin : 0;
+  padding : 0;
+}
+
+body {
+  font-family : 'TmoneyRoundWindRegular';
+  font-size : 14px;
+  line-height : 1.5em;
+  color : #765758;
+  background : #fffef5;
+  position : relative;
+  min-width : 1320px;
+}
+
+a {
+  text-decoration : none;
+  color : rgb(30,30,30);
+}
+
+ul li {
+  list-style: none;
+}
+
+/*web-font*/
+@font-face {
+  font-family: 'TmoneyRoundWindRegular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TmoneyRoundWindExtraBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BMJUA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*공통*/
+.title_box {
+  width : 1320px;
+  height : 130px;
+  text-align: center;
+}
+
+.title {
+  font-family: 'BMJUA';
+  font-size : 32px;
+  letter-spacing: 2px;
+}
+
+.button {
+  width : 120px;
+  height : 40px;
+  border-radius: 50px;
+  background : #acdbd1;
+  color : #765758;
+}
+
+.button:hover {
+  background : #fff;
+  color : #268477;
+  border : 1px dashed #268477;
+  box-sizing: border-box;
+}
+
+
+/*header*/
+#header_wrap {
+  width : 100%;
+  height : 160px;
+  position : fixed;
+  top : 0;
+  left : 0;
+  z-index : 10000;
+  transition: all 0.5s;
+}
+
+#header {
+  width : 1320px;
+  margin : 0 auto;
+}
+
+.header_top {
+  height : 50px;
+  font-family: 'TmoneyRoundWindRegular';
+  box-sizing: border-box;
+}
+
+#util {
+  float : right;
+  padding : 20px 0;
+}
+
+#util li {
+  float : left;
+  padding-left : 30px; 
+}
+
+#util li a {
+  display: block;
+  color : #765758;
+  font-size : 12px;
+  padding : 2px 5px;
+}
+
+.header_bottom {
+  height : 110px;
+  font-family: 'TmoneyRoundWindExtraBold';
+  padding : 10px 0 19px;
+  box-sizing: border-box;
+}
+
+.header_logo {
+  float : left;
+  padding-bottom : 50px;
+}
+
+#gnb {
+  float : right;
+  padding-top : 30px;
+}
+
+#gnb > li {
+  float : left;
+  padding-left : 80px;
+}
+
+#gnb > li > a {
+  display: block;
+  color : #765758;
+  font-family: 'TmoneyRoundWindExtraBold';
+  font-size : 18px;
+  padding : 6px 15px 14px;
+}
+
+/*submenu*/
+.submenu_wrap {
+  width : 100%;
+  overflow: hidden;
+  position : absolute;
+  top : 160px;
+  left : 0;
+  padding-bottom : 10px;
+  background : rgba(255,255,255,0.8)
+}
+
+.submenu {
+  width : 1320px;
+  margin : 0 auto;
+}
+
+.submenu_right {
+  float : right;
+}
+
+.submenu_right ul {
+  float : left;
+  text-align: center;
+  width : 180px;
+  box-sizing: border-box;
+} 
+
+.submenu_right ul li {
+  padding-bottom : 10px;
+}
+
+.submenu_right ul li a {
+  display: block;
+  font-size : 15px;
+  font-weight : bold;
+  font-family: 'TmoneyRoundWindRegular';
+  color : #765758;
+  padding : 8px 0;
+  width : 120px;
+}
+
+.brand_sub {
+  padding-left : 25px;
+}
+
+.food_sub {
+  padding-left : 12px;
+}
+
+.product_sub {
+  padding-left : 18px;
+}
+
+.class_sub {
+  padding-left : 30px;
+}
+
+.event_sub {
+  padding-left : 30px;
+}
+
+.dodamkit_sub {
+  padding-left : 50px;
+}
+
+.submenu_right ul li:hover a {
+  color : #268477;
+  text-decoration: underline;
+}
+
+/*header background color*/
+#header_wrap.header-scrolled {
+  background: rgba(255,255, 255, 1);
+  transition: all 0.5s;
+}
+
+
+/*banner*/
+#banner {
+  height : 810px;
+  margin : 0 auto;
+}
+
+
+
+/*section1*/
+
+#section1_wrap {
+  height : 450px;
+  margin : 150px 0;
+}
+
+#section1 {
+  width : 1320px;
+  height : 450px;
+  margin : 0 auto;
+}
+
+#section1 ul li {
+  float : left;
+  margin-right : 40px;
+}
+
+#section1 ul li:nth-child(4) {
+  margin-right : 0;
+}
+
+.box {
+  width : 300px;
+  height : 450px;
+}
+
+.box_img {
+  width : 300px;
+  height : 260px;
+}
+
+.box_txt {
+  width : 300px;
+  height : 190px;
+  box-sizing: border-box;
+  background : #fff;
+  color : rgb(30,30,30);
+}
+
+.box_title {
+  font-size : 20px;
+  font-weight : bold;
+  padding : 20px 0;
+  line-height: 1.5em;
+}
+
+
+
+/*section2*/
+#section2_wrap {
+  height : 700px;
+  background : #bcd6d0 url(../images/sub_monthly/sub_monthly_review-bg.jpg) no-repeat right top;
+  padding-top : 70px;
+  box-sizing: border-box;
+  margin-bottom : 150px;
+}
+
+#section2 {
+  width : 1200px;
+  height : 560px;
+  margin : 0 auto;
+  position : relative;
+}
+
+.review_box {
+  width : 500px;
+  height : 160px;
+  padding : 30px;
+  color : rgb(30,30,30);
+  background : #fffef5;
+}
+
+.txt_id {
+  font-size : 18px;
+  padding-bottom : 10px;
+}
+
+.review_txt {
+  font-size : 15px;
+}
+
+.review1 {
+  position : absolute;
+  top : 0;
+  left : 90px;
+}
+
+.review2 {
+  position : absolute;
+  top : 200px;
+  left : 200px;
+}
+
+.review3 {
+  position : absolute;
+  bottom : 0;
+  left : 90px;
+}
+
+
+
+/*section3*/
+#section3_wrap {
+  height : 810px;
+  margin-bottom : 150px;
+}
+
+#section3 {
+  width : 1320px;
+  height : 810px;
+  margin : 0 auto;
+  box-sizing: border-box;
+}
+
+.membership_title {
+  height : 50px;
+  margin-bottom : 50px;
+  text-align: center;
+}
+
+.membership_title p {
+  font-family: 'BMJUA';
+  font-size : 32px;
+  padding-top : 5px;
+}
+
+.membership_wrap {
+  height : 600px;
+}
+
+.membership_wrap ul li {
+  float : left;
+}
+
+.membership_wrap ul li:nth-child(2) {
+  margin : 0 45px;
+}
+
+.membership_box {
+  width : 410px;
+  height : 600px;
+  border-radius : 50px;
+  border : 8px solid #acdbd1;
+  background : #fff;
+  text-align: center;
+  color : rgb(30,30,30);
+}
+
+.membership_name {
+  font-size : 28px;
+  font-weight : bold;
+  color : #765758;
+  padding : 30px 0;
+}
+
+.membership_contents {
+  font-size : 20px;
+  font-weight : bold;
+  padding : 20px 0 30px;
+  line-height : 1.5em;
+}
+
+.membership_price {
+  font-family: 'TmoneyRoundWindExtraBold';
+  font-size : 30px;
+  padding-bottom : 30px;
+}
+
+.membership_benefit {
+  font-size : 20px;
+  line-height : 1.8em;
+  text-align: left;
+  padding-left : 55px;
+}
+
+.monthly_button {
+  margin : 0 auto;
+  margin-top : 50px;
+  color : #765758;
+  text-align: center;
+  font-size : 18px;
+  font-weight : bold;
+  padding-top : 12px;
+  box-sizing: border-box;
+  width : 140px;
+  height : 50px;
+  cursor : pointer;
+}
+
+
+/*section4*/
+#section4_wrap {
+  height : 200px;
+  margin-bottom : 150px;
+}
+
+#section4 {
+  width : 1320px;
+  margin : 0 auto;
+}
+
+
+
+/*footer*/
+#footer_wrap {
+  height : 300px;
+  background : url(../images/main/footer_background.jpg);
+}
+
+#footer {
+  width : 1320px;
+  height : 300px;
+  margin : 0 auto;
+}
+
+.footer_top {
+  width : 1320px;
+  height : 100px;
+  box-sizing: border-box;
+  padding : 30px 0;
+  position : relative;
+}
+
+.footer_top > ul {
+  position : absolute;
+  top : 50%;
+  left : 50%;
+  margin-top : -15px;
+  margin-left : -254.3px;
+}
+
+.footer_top li {
+  float : left;
+  padding : 0 10px;
+  font-size : 14px;
+  color : #268477;
+  font-weight: bold;
+}
+
+.footer_top li a {
+  display: block;
+  padding : 5px 10px;
+  font-size : 14px;
+  color : #268477;
+  font-weight: bold;
+}
+
+.footer_top li:nth-child(2) {
+  padding : 5px 10px;
+}
+
+.footer_top li:nth-child(4) {
+  padding : 5px 10px;
+}
+
+.footer_top li:nth-child(6) {
+  padding : 5px 10px;
+}
+
+.footer_bottom {
+  height : 200px;
+  position : relative;
+}
+
+.footer_logo {
+  position : absolute;
+  top : 0;
+  left : 0;
+}
+
+.footer_textbox {
+  position : absolute;
+  top : 0;
+  left : 260px;
+  font-size : 12px;
+  color : #268477;
+  font-weight : bold;
+}
+
+.footer_iconbox {
+  position : absolute;
+  top : 0;
+  right : 0;
+  width : 150px;
+}
+
+.footer_iconbox li {
+  float : left;
+  padding-left : 23px;
+}
+
+.footer_iconbox li a {
+  display: block;
+  padding : 0px;
+}

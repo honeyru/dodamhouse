@@ -1,0 +1,52 @@
+html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 1320px;
+        margin: 100px auto;
+    }
+
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+		.gallery{
+			width: 98%;
+			height:300px;
+			background:yellow;
+			margin:0 1%;
+			text-align:center;
+			border-radius:30px;
+		}
+		
+		.gallery img{
+			width: 80%;
+			display:inline-block;
+		}
+
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: 1;
+    }
+    
+    .slick-active {
+      opacity: 1;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }

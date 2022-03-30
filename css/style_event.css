@@ -1,0 +1,414 @@
+* {
+  margin : 0;
+  padding : 0;
+}
+
+body {
+  font-family : 'TmoneyRoundWindRegular';
+  font-size : 14px;
+  line-height : 1.5em;
+  color : #765758;
+  background : #fffef5;
+  position : relative;
+  min-width : 1320px;
+}
+
+a {
+  text-decoration : none;
+  color : rgb(30,30,30);
+}
+
+ul li {
+  list-style: none;
+}
+
+/*web-font*/
+@font-face {
+  font-family: 'TmoneyRoundWindRegular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TmoneyRoundWindExtraBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BMJUA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*공통*/
+.title_box {
+  width : 1320px;
+  height : 130px;
+  text-align: center;
+}
+
+.title {
+  font-family: 'BMJUA';
+  font-size : 32px;
+  letter-spacing: 2px;
+}
+
+.button {
+  width : 120px;
+  height : 40px;
+  border-radius: 50px;
+  background : #acdbd1;
+  color : #765758;
+}
+
+.button:hover {
+  background : #fff;
+  color : #268477;
+  border : 1px dashed #268477;
+  box-sizing: border-box;
+}
+
+
+/*header*/
+#header_wrap {
+  width : 100%;
+  height : 160px;
+  position : fixed;
+  top : 0;
+  left : 0;
+  z-index : 10000;
+  transition: all 0.5s;
+}
+
+#header {
+  width : 1320px;
+  margin : 0 auto;
+}
+
+.header_top {
+  height : 50px;
+  font-family: 'TmoneyRoundWindRegular';
+  box-sizing: border-box;
+}
+
+#util {
+  float : right;
+  padding : 20px 0;
+}
+
+#util li {
+  float : left;
+  padding-left : 30px; 
+}
+
+#util li a {
+  display: block;
+  color : #765758;
+  font-size : 12px;
+  padding : 2px 5px;
+}
+
+.header_bottom {
+  height : 110px;
+  font-family: 'TmoneyRoundWindExtraBold';
+  padding : 10px 0 19px;
+  box-sizing: border-box;
+}
+
+.header_logo {
+  float : left;
+  padding-bottom : 50px;
+}
+
+#gnb {
+  float : right;
+  padding-top : 30px;
+}
+
+#gnb > li {
+  float : left;
+  padding-left : 80px;
+}
+
+#gnb > li > a {
+  display: block;
+  color : #765758;
+  font-family: 'TmoneyRoundWindExtraBold';
+  font-size : 18px;
+  padding : 6px 15px 14px;
+}
+
+/*submenu*/
+.submenu_wrap {
+  width : 100%;
+  overflow: hidden;
+  position : absolute;
+  top : 160px;
+  left : 0;
+  padding-bottom : 10px;
+  background : rgba(255,255,255,0.9)
+}
+
+.submenu {
+  width : 1320px;
+  margin : 0 auto;
+}
+
+.submenu_right {
+  float : right;
+}
+
+.submenu_right ul {
+  float : left;
+  text-align: center;
+  width : 180px;
+  box-sizing: border-box;
+} 
+
+.submenu_right ul li {
+  padding-bottom : 10px;
+}
+
+.submenu_right ul li a {
+  display: block;
+  font-size : 15px;
+  font-weight : bold;
+  font-family: 'TmoneyRoundWindRegular';
+  color : #765758;
+  padding : 8px 0;
+  width : 120px;
+}
+
+.brand_sub {
+  padding-left : 25px;
+}
+
+.food_sub {
+  padding-left : 12px;
+}
+
+.product_sub {
+  padding-left : 18px;
+}
+
+.class_sub {
+  padding-left : 30px;
+}
+
+.event_sub {
+  padding-left : 30px;
+}
+
+.dodamkit_sub {
+  padding-left : 50px;
+}
+
+.submenu_right ul li:hover a {
+  color : #268477;
+  text-decoration: underline;
+}
+
+/*header background color*/
+#header_wrap.header-scrolled {
+  background: rgba(255,255, 255, 1);
+  transition: all 0.5s;
+}
+
+
+/*banner*/
+#banner {
+  height : 810px;
+  margin : 0 auto;
+}
+
+
+
+/*section1*/
+#section1_wrap {
+  /*height : 2420px;*/
+  margin : 150px 0;
+}
+
+#section1 {
+  width : 1320px;
+  margin : 0 auto;
+  /*height : 2420px;*/
+}
+
+
+/*tab*/
+.container {
+  width : 1096px;
+  /*height : 2240px;*/
+  margin : 0 auto;
+  margin-top : 80px;
+}
+
+.tab_title {
+  margin-left : 198px;
+}
+
+.tab_title li {
+  list-style : none;
+  float : left;
+  width : 350px;
+  height : 100px;
+  cursor : pointer;
+  text-align : center;
+  border-bottom : 5px solid #acdbd1;
+  box-sizing: border-box;
+  font-size : 24px;
+  font-family: 'BMJUA';
+  padding-top : 40px;
+  background : #fff;
+  margin-bottom : 80px;
+}
+
+.tab_title li.on {
+  background : #268477;
+  color : #fff;
+}
+
+.tab_cont {
+  clear : both;
+  /*height : 1320px;*/
+}
+
+.tab_cont div {
+  display : block;
+  text-align: center;
+}
+
+.tab_cont div.on {
+  display: none;
+}
+
+.event_box {
+  width : 1100px;
+  height : 500px;
+  margin-top : 80px;
+}
+
+.event_box img {
+  width : 1100px;
+  height : 400px;
+  display: block;
+}
+
+.event_txt {
+  padding : 21.5px 0;
+  background : #fff;
+  height : 100px;
+}
+
+.event_title {
+  font-size : 22px;
+  font-weight : bold;
+  color : rgb(30,30,30);
+  text-align: left;
+  padding-bottom : 15px;
+}
+
+.event_day {
+  font-size : 16px;
+  color : rgb(30,30,30);
+  text-align: left;
+}
+
+/*footer*/
+#footer_wrap {
+  height : 300px;
+  background : url(../images/main/footer_background.jpg);
+}
+
+#footer {
+  width : 1320px;
+  height : 300px;
+  margin : 0 auto;
+}
+
+.footer_top {
+  width : 1320px;
+  height : 100px;
+  box-sizing: border-box;
+  padding : 30px 0;
+  position : relative;
+}
+
+.footer_top > ul {
+  position : absolute;
+  top : 50%;
+  left : 50%;
+  margin-top : -15px;
+  margin-left : -254.3px;
+}
+
+.footer_top li {
+  float : left;
+  padding : 0 10px;
+  font-size : 14px;
+  color : #268477;
+  font-weight: bold;
+}
+
+.footer_top li a {
+  display: block;
+  padding : 5px 10px;
+  font-size : 14px;
+  color : #268477;
+  font-weight: bold;
+}
+
+.footer_top li:nth-child(2) {
+  padding : 5px 10px;
+}
+
+.footer_top li:nth-child(4) {
+  padding : 5px 10px;
+}
+
+.footer_top li:nth-child(6) {
+  padding : 5px 10px;
+}
+
+.footer_bottom {
+  height : 200px;
+  position : relative;
+}
+
+.footer_logo {
+  position : absolute;
+  top : 0;
+  left : 0;
+}
+
+.footer_textbox {
+  position : absolute;
+  top : 0;
+  left : 260px;
+  font-size : 12px;
+  color : #268477;
+  font-weight : bold;
+}
+
+.footer_iconbox {
+  position : absolute;
+  top : 0;
+  right : 0;
+  width : 150px;
+}
+
+.footer_iconbox li {
+  float : left;
+  padding-left : 23px;
+}
+
+.footer_iconbox li a {
+  display: block;
+  padding : 0px;
+}

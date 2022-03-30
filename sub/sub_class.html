@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1380">
+  <title>도담하우스</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+  <link href="../css/style_class.css" rel="stylesheet" type="text/css">
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="../js/script_class.js"></script>
+  
+  <!--슬라이드배너CSS-->
+  <link href="../css/banner/slide_autoplay.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../css/banner/swiper.css">
+  
+  <!--오토슬라이드-->
+  <link rel="stylesheet" type="text/css" href="../js/autoslide/slick.css">
+  <link rel="stylesheet" type="text/css" href="../js/autoslide/slick-theme_.css">
+  <link rel="stylesheet" type="text/css" href="../css/autoslide/style.css">
+ 
+  
+  <!--슬라이드배너js-->
+  <script src="../js/banner/swiper.min.js"></script>
+</head>
+<body>
+  <div id="header_wrap">  <!--header s-->
+    <div id="header">
+      <div class="header_top">
+        <ul id="util">
+          <li><a href="javascript:return false;">LOGIN</a></li>
+          <li><a href="javascript:return false;">JOIN</a></li>
+          <li><a href="javascript:return false;"><img src="../images/icon/icon_mypage.png"></a></li>
+          <li><a href="javascript:return false;"><img src="../images/icon/icon_cart.png"></a></li>
+          <li><a href="javascript:return false;"><img src="../images/icon/icon_search.png"></a></li>
+        </ul>
+      </div>
+      <div class="header_bottom">
+        <h1 class="header_logo"><a href="../index.html"><img src="../images/icon/header_logo.png"></a></h1>
+        <ul id="gnb">
+          <li><a href="../sub/sub_brand.html">BRAND</a></li>
+          <li><a href="../sub/sub_product.html">PRODUCT</a></li>
+          <li><a href="../sub/sub_class.html">CLASS</a></li>
+          <li><a href="../sub/sub_event.html">EVENT</a></li>
+          <li><a href="../sub/sub_monthly.html">DODAM-KIT</a></li>
+        </ul>
+        <div class="submenu_wrap">
+          <div class="submenu">
+            <div class="submenu_right">
+              <ul class="brand_sub">
+                <li><a href="../sub/sub_brand.html">BRAND STORY</a></li>
+                <li><a href="../sub/sub_brand.html">SUPPORT</a></li>
+              </ul>
+            
+              <ul class="product_sub">
+                <li><a href="../sub/sub_product.html">ALL</a></li>
+                <li><a href="../sub/sub_product.html">FOOD</a></li>
+                <li><a href="../sub/sub_product.html">PRODUCT</a></li>
+                <li><a href="../sub/sub_product.html">ACC</a></li>
+                <li><a href="../sub/sub_product.html">STATIONERY</a></li>
+              </ul>
+              <ul class="class_sub">
+                <li><a href="../sub/sub_class.html">ABOUT</a></li>
+                <li><a href="../sub/sub_class.html">APPLY</a></li>
+              </ul>
+              <ul class="event_sub">
+                <li><a href="../sub/sub_event.html">EVENT</a></li>
+                <li><a href="../sub/sub_event.html">NOTICE</a></li>
+                <li><a href="../sub/sub_event.html">FAQ</a></li>
+              </ul>
+              <ul class="dodamkit_sub">
+                <li><a href="../sub/sub_monthly.html">ABOUT</a></li>
+                <li><a href="../sub/sub_monthly.html">APPLY</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>   <!--header e-->
+
+
+  <div id="banner">
+    <!--배너 고정슬라이드 js 시작-->
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper" style="max-width:100%;">
+        <div class="swiper-slide"><a href="../sub/sub_event.html"><img src="../images/main/banner5.jpg" alt="상품배너"></a></div>
+        <div class="swiper-slide"><a href="../sub/sub_product.html"><img src="../images/main/banner3.jpg" alt="식품배너"></a></div>
+        <div class="swiper-slide"><a href="../sub/sub_product.html"><img src="../images/main/banner2.jpg" alt="이벤트배너"></a></div>
+        <div class="swiper-slide"><a href="../sub/sub_monthly.html"><img src="../images/main/banner1.jpg" alt="정기구독배너"></a></div>
+      </div>
+      <!-- 화살표 버튼 -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- 블릿 버튼 -->
+      <div class="swiper-pagination"></div>
+      </div>
+
+     <script>
+     var swiper = new Swiper('.swiper-container', {
+      autoplay: {
+      delay: 2500,//슬라이드 넘어가는 시간
+      disableOnInteraction: false,
+      },
+      loop: true,//슬라이드 무한반복
+      navigation: {//화살표 버튼
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      },
+      pagination: {//블릿 버튼
+      el: '.swiper-pagination',
+      clickable: true,
+      },
+    });
+    </script>
+    <!--배너 고정슬라이드 js 끝-->
+</div><!--main_banner e-->
+  </div>
+
+  <div id="section1_wrap">
+    <div id="section1">
+      <div class="container">
+        <div class="tabs_box">
+          <ul class="tabs">
+            <li class="tab-link current" data-tab="tab-1">01 수제간식</li>
+            <li class="tab-link" data-tab="tab-2">02 케이크</li>
+            <li class="tab-link" data-tab="tab-3">03 애견음식</li>
+          </ul>
+        </div>
+
+        <div id="tab-1" class="tab-content current">
+        
+          <div class="tab_cont">
+            <div class="tab_wrap snacks">
+              <div class="right_box">
+                <div class="tab_btn">
+                  <p>도담클래스<img src="../images/icon/symbol_icon.png"> 첫 번째 테마</p>
+                </div>
+                <div class="txtbox1">
+                  <p class="txtbox1_title">
+                    반려동물 입맛 호강시켜주기 프로젝트 첫 번째!<br>
+                    수제간식 만들기입니다.
+                  </p>
+                  <p class="txtbox1_txt">
+                    소중한 내 반려동물이 먹을 음식이기 때문에<br>
+                    모든 메뉴는 무방부제,무색소,무첨가제입니다!<br>
+                    요리가 서툴거나 손재주가 없으신 분들도 OK<br>
+                    소수 인원으로 진행되기 때문에 하나하나 세심히 짚어드리며<br>
+                    수업을 진행합니다.<br><br>
+
+                    클래스 체험 후 리뷰 이벤트에 참여하시면 이메일로 레시피를 보내드려요!<br><br>
+
+                    기본적으로 일회용기로 포장을 도와드리고 있지만, 환경을 위해<br>
+                    다회용기를 지참해 포장해가시는 분께는 소정의 선물을 함께 드립니다.<br><br>
+
+                    재료와 도구는 모두 준비해드리기 때문에 따로 챙겨오실 필요는 없습니다.<br>
+                  </p>
+                </div>
+                <div class="right_img1">
+                  <img src="../images/sub_class/sub_class_snack_img1.jpg">
+                </div>
+                <div class="txtbox2">
+                  <p class="txtbox2_title">
+                    편의 사항
+                  </p>
+                  <p class="txtbox2_txt">
+                    와이파이 제공 / 주차공간 제공 / 반려동물 동반 가능 / 앞치마 및 장갑 제공 /<br>
+                    포장용기 제공 / 내부사진 촬영 가능
+                  </p>
+                  <p class="txtbox2_title txt2">
+                    유의 사항
+                  </p>
+                  <p class="txtbox2_txt">
+                    1. 해당 클래스는 만 10세 이상부터 이용 가능합니다.<br>
+                    2. 배변훈련이 되지 않은 반려견의 경우 미리 문의 부탁드립니다.<br>
+                    3. 입질이 심한 반려견의 경우 동반입장이 거부될 수 있습니다.<br>
+                    4. 관련 문의는 카카오톡 채널로 연락주세요.<br>
+                  </p>
+                </div>
+              </div>
+              <div class="left_box">
+                <div class="left_img1">
+                  <img src="../images/sub_class/sub_class_snack_img2.jpg">
+                </div>
+                <div class="left_img2">
+                  <img src="../images/sub_class/sub_class_snack_img3.jpg">
+                </div>
+                <div class="left_img3">
+                  <img src="../images/sub_class/sub_class_snack_img4.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="tab-2" class="tab-content">
+          
+          <div class="tab_cont">
+            <div class="tab_wrap snacks">
+              <div class="right_box">
+                <div class="tab_btn">
+                  <p>도담클래스<img src="../images/icon/symbol_icon.png"> 두 번째 테마</p>
+                </div>
+                <div class="txtbox1">
+                  <p class="txtbox1_title">
+                    반려동물 입맛 호강시켜주기 프로젝트 두 번째!<br>
+                    케이크 만들기입니다.
+                  </p>
+                  <p class="txtbox1_txt">
+                    소중한 내 반려동물이 먹을 음식이기 때문에<br>
+                    모든 메뉴는 무방부제,무색소,무첨가제입니다!<br>
+                    요리가 서툴거나 손재주가 없으신 분들도 OK<br>
+                    소수 인원으로 진행되기 때문에 하나하나 세심히 짚어드리며<br>
+                    수업을 진행합니다.<br><br>
+
+                    클래스 체험 후 리뷰 이벤트에 참여하시면 이메일로 레시피를 보내드려요!<br><br>
+
+                    기본적으로 일회용기로 포장을 도와드리고 있지만, 환경을 위해<br>
+                    다회용기를 지참해 포장해가시는 분께는 소정의 선물을 함께 드립니다.<br><br>
+
+                    재료와 도구는 모두 준비해드리기 때문에 따로 챙겨오실 필요는 없습니다.<br>
+                  </p>
+                </div>
+                <div class="right_img1">
+                  <img src="../images/sub_class/sub_class_cake_img1.jpg">
+                </div>
+                <div class="txtbox2">
+                  <p class="txtbox2_title">
+                    편의 사항
+                  </p>
+                  <p class="txtbox2_txt">
+                    와이파이 제공 / 주차공간 제공 / 반려동물 동반 가능 / 앞치마 및 장갑 제공 /<br>
+                    포장용기 제공 / 내부사진 촬영 가능
+                  </p>
+                  <p class="txtbox2_title txt2">
+                    유의 사항
+                  </p>
+                  <p class="txtbox2_txt">
+                    1. 해당 클래스는 만 10세 이상부터 이용 가능합니다.<br>
+                    2. 배변훈련이 되지 않은 반려견의 경우 미리 문의 부탁드립니다.<br>
+                    3. 입질이 심한 반려견의 경우 동반입장이 거부될 수 있습니다.<br>
+                    4. 관련 문의는 카카오톡 채널로 연락주세요.<br>
+                  </p>
+                </div>
+              </div>
+              <div class="left_box">
+                <div class="left_img1">
+                  <img src="../images/sub_class/sub_class_cake_img2.jpg">
+                </div>
+                <div class="left_img2">
+                  <img src="../images/sub_class/sub_class_cake_img3.jpg">
+                </div>
+                <div class="left_img3">
+                  <img src="../images/sub_class/sub_class_cake_img4.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="tab-3" class="tab-content">
+          
+          <div class="tab_cont">
+            <div class="tab_wrap snacks">
+              <div class="right_box">
+                <div class="tab_btn">
+                  <p>도담클래스<img src="../images/icon/symbol_icon.png"> 세 번째 테마</p>
+                </div>
+                <div class="txtbox1">
+                  <p class="txtbox1_title">
+                    반려동물 입맛 호강시켜주기 프로젝트 세 번째!<br>
+                    애견음식 만들기입니다.
+                  </p>
+                  <p class="txtbox1_txt">
+                    소중한 내 반려동물이 먹을 음식이기 때문에<br>
+                    모든 메뉴는 무방부제,무색소,무첨가제입니다!<br>
+                    요리가 서툴거나 손재주가 없으신 분들도 OK<br>
+                    소수 인원으로 진행되기 때문에 하나하나 세심히 짚어드리며<br>
+                    수업을 진행합니다.<br><br>
+
+                    클래스 체험 후 리뷰 이벤트에 참여하시면 이메일로 레시피를 보내드려요!<br><br>
+
+                    기본적으로 일회용기로 포장을 도와드리고 있지만, 환경을 위해<br>
+                    다회용기를 지참해 포장해가시는 분께는 소정의 선물을 함께 드립니다.<br><br>
+
+                    재료와 도구는 모두 준비해드리기 때문에 따로 챙겨오실 필요는 없습니다.<br>
+                  </p>
+                </div>
+                <div class="right_img1">
+                  <img src="../images/sub_class/sub_class_food_img1.jpg">
+                </div>
+                <div class="txtbox2">
+                  <p class="txtbox2_title">
+                    편의 사항
+                  </p>
+                  <p class="txtbox2_txt">
+                    와이파이 제공 / 주차공간 제공 / 반려동물 동반 가능 / 앞치마 및 장갑 제공 /<br>
+                    포장용기 제공 / 내부사진 촬영 가능
+                  </p>
+                  <p class="txtbox2_title txt2">
+                    유의 사항
+                  </p>
+                  <p class="txtbox2_txt">
+                    1. 해당 클래스는 만 10세 이상부터 이용 가능합니다.<br>
+                    2. 배변훈련이 되지 않은 반려견의 경우 미리 문의 부탁드립니다.<br>
+                    3. 입질이 심한 반려견의 경우 동반입장이 거부될 수 있습니다.<br>
+                    4. 관련 문의는 카카오톡 채널로 연락주세요.<br>
+                  </p>
+                </div>
+              </div>
+              <div class="left_box">
+                <div class="left_img1">
+                  <img src="../images/sub_class/sub_class_food_img2.jpg">
+                </div>
+                <div class="left_img2">
+                  <img src="../images/sub_class/sub_class_food_img3.jpg">
+                </div>
+                <div class="left_img3">
+                  <img src="../images/sub_class/sub_class_food_img4.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+       
+      </div>
+
+      <!--신청하기버튼-->
+          <div class="class_btn_wrap">
+            <div class="class_btn"><a href="javascript:return false;">신청하기</a></div>
+          </div> 
+        </div>  <!--section1 e-->  
+    </div>
+    
+    <div id="section2">
+      <a href="javascript:return false;">
+        <img src="../images/sub_class/sub_class_banner.jpg">
+      </a>
+    </div>
+  
+
+
+  <div id="footer_wrap">   <!--footer s-->
+    <div id="footer">
+      <div class="footer_top">
+        <ul>
+          <li><a href="#">이용약관</a></li>
+          <li>|</li>
+          <li><a href="#">개인정보 처리방침</a></li>
+          <li>|</li>
+          <li><a href="#">이용안내</a></li>
+          <li>|</li>
+          <li><a href="#">공지사항</a></li>
+        </ul>
+      </div>
+      <div class="footer_bottom">
+        <h1 class="footer_logo"><a href="#"><img src="../images/icon/footer_logo.png"></a></h1>
+        <div class="footer_textbox">
+          <p>
+            CEO : HYUNJUNG LEETEL : 010-9596-8299<br>
+            E-MAIL : daenghoney@naver.com<br>
+            ADDRESS : DODAMHOUSE, 26, Jungang-daero, Jung-gu, Busan, Republic of Korea<br>
+            BUSINESS LICENCE : 123-45-67890<br>
+            MAIL ORDER LICENSE : 제2022-부산중구-12345호<br>
+          </p>
+          <p>Copyright ⓒ 2022 BY DODAMHOUSE All rights reserved.</p>
+        </div>
+        <div class="footer_iconbox">
+          <ul>
+            <li><a href="javascript:return false;"><img src="../images/icon/footer_icon_kakao.png"></a></li>
+            <li><a href="javascript:return false;"><img src="../images/icon/footer_icon_insta.png"></a></li>
+            <li><a href="javascript:return false;"><img src="../images/icon/footer_icon_twitter.png"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>   <!--footer e-->
+
+  </div>
+</body>
+</html>

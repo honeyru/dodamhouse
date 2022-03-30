@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1380">
+  <title>도담하우스</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+  <link href="../css/style_event.css" rel="stylesheet" type="text/css">
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="../js/script_event.js"></script>
+  
+  <!--슬라이드배너CSS-->
+  <link href="../css/banner/slide_autoplay.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../css/banner/swiper.css">
+  
+  <!--오토슬라이드-->
+  <link rel="stylesheet" type="text/css" href="../js/autoslide/slick.css">
+  <link rel="stylesheet" type="text/css" href="../js/autoslide/slick-theme_.css">
+  <link rel="stylesheet" type="text/css" href="../css/autoslide/style.css">
+ 
+  
+  <!--슬라이드배너js-->
+  <script src="../js/banner/swiper.min.js"></script>
+</head>
+<body>
+  <div id="header_wrap">  <!--header s-->
+    <div id="header">
+      <div class="header_top">
+        <ul id="util">
+          <li><a href="javascript:return false;">LOGIN</a></li>
+          <li><a href="javascript:return false;">JOIN</a></li>
+          <li><a href="javascript:return false;"><img src="../images/icon/icon_mypage.png"></a></li>
+          <li><a href="javascript:return false;"><img src="../images/icon/icon_cart.png"></a></li>
+          <li><a href="javascript:return false;"><img src="../images/icon/icon_search.png"></a></li>
+        </ul>
+      </div>
+      <div class="header_bottom">
+        <h1 class="header_logo"><a href="../index.html"><img src="../images/icon/header_logo.png"></a></h1>
+        <ul id="gnb">
+          <li><a href="../sub/sub_brand.html">BRAND</a></li>
+          <li><a href="../sub/sub_product.html">PRODUCT</a></li>
+          <li><a href="../sub/sub_class.html">CLASS</a></li>
+          <li><a href="../sub/sub_event.html">EVENT</a></li>
+          <li><a href="../sub/sub_monthly.html">DODAM-KIT</a></li>
+        </ul>
+        <div class="submenu_wrap">
+          <div class="submenu">
+            <div class="submenu_right">
+              <ul class="brand_sub">
+                <li><a href="../sub/sub_brand.html">BRAND STORY</a></li>
+                <li><a href="../sub/sub_brand.html">SUPPORT</a></li>
+              </ul>
+            
+              <ul class="product_sub">
+                <li><a href="../sub/sub_product.html">ALL</a></li>
+                <li><a href="../sub/sub_product.html">FOOD</a></li>
+                <li><a href="../sub/sub_product.html">PRODUCT</a></li>
+                <li><a href="../sub/sub_product.html">ACC</a></li>
+                <li><a href="../sub/sub_product.html">STATIONERY</a></li>
+              </ul>
+              <ul class="class_sub">
+                <li><a href="../sub/sub_class.html">ABOUT</a></li>
+                <li><a href="../sub/sub_class.html">APPLY</a></li>
+              </ul>
+              <ul class="event_sub">
+                <li><a href="../sub/sub_event.html">EVENT</a></li>
+                <li><a href="../sub/sub_event.html">NOTICE</a></li>
+                <li><a href="../sub/sub_event.html">FAQ</a></li>
+              </ul>
+              <ul class="dodamkit_sub">
+                <li><a href="../sub/sub_monthly.html">ABOUT</a></li>
+                <li><a href="../sub/sub_monthly.html">APPLY</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>   <!--header e-->
+
+
+  <div id="banner">
+    <!--배너 고정슬라이드 js 시작-->
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper" style="max-width:100%;">
+        <div class="swiper-slide"><a href="../sub/sub_event.html"><img src="../images/main/banner2.jpg" alt="이벤트배너"></a></div>
+        <div class="swiper-slide"><a href="../sub/sub_product.html"><img src="../images/main/banner3.jpg" alt="푸드배너"></a></div>
+        <div class="swiper-slide"><a href="../sub/sub_product.html"><img src="../images/main/banner5.jpg" alt="상품배너"></a></div>
+        <div class="swiper-slide"><a href="../sub/sub_monthly.html"><img src="../images/main/banner1.jpg" alt="키트배너"></a></div>
+      </div>
+      <!-- 화살표 버튼 -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- 블릿 버튼 -->
+      <div class="swiper-pagination"></div>
+      </div>
+
+     <script>
+     var swiper = new Swiper('.swiper-container', {
+      autoplay: {
+      delay: 2500,//슬라이드 넘어가는 시간
+      disableOnInteraction: false,
+      },
+      loop: true,//슬라이드 무한반복
+      navigation: {//화살표 버튼
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      },
+      pagination: {//블릿 버튼
+      el: '.swiper-pagination',
+      clickable: true,
+      },
+    });
+    </script>
+    <!--배너 고정슬라이드 js 끝-->
+  </div><!--main_banner e-->
+  
+
+
+
+  <div id="section1_wrap">
+    <div id="section1">
+      <div class="title_tap_wrap">   <!--tab s--> 
+        <div class="container"> 
+          <ul class="tab_title">
+            <li class="on">진행중인 이벤트</li>
+            <li>종료된 이벤트</li>
+          </ul>
+        
+          <div class="tab_cont">
+            <div>
+              <a href="#">
+                <div class="event_box event1">
+                  <img src="../images/sub_event/sub_event_banner1.jpg">
+                  <div class="event_txt">
+                    <p class="event_title">도담하우스 BEST 특급 세일</p>
+                    <p class="event_day">2022년 3월 28일 ~ 2022년 4월 30일</p>
+                  </div>  
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="event_box event2">
+                  <img src="../images/sub_event/sub_event_banner2.jpg">
+                  <div class="event_txt">
+                    <p class="event_title">도담하우스 4월 베스트 리뷰 선정 </p>
+                    <p class="event_day">2022년 4월 1일 ~ 2022년 4월 30일</p>
+                  </div>  
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="event_box event3">
+                  <img src="../images/sub_event/sub_event_banner3.jpg">
+                  <div class="event_txt">
+                    <p class="event_title">도담하우스 2022 독자모델 모집</p>
+                    <p class="event_day">2022년 3월 1일 ~ 2022년 4월 30일</p>
+                  </div>  
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="event_box event4">
+                  <img src="../images/sub_event/sub_event_banner4.jpg">
+                  <div class="event_txt">
+                    <p class="event_title">도담하우스 4월 구매 금액별 사은품 증정 이벤트</p>
+                    <p class="event_day">2022년 4월 1일 ~ 2022년 4월 30일</p>
+                  </div>  
+                </div>
+              </a>
+            </div>
+            <div class="on">
+              <a href="#">
+                <div class="event_box event1">
+                  <img src="../images/sub_event/sub_event_end_banner1.jpg">
+                  <div class="event_txt">
+                    <p class="event_title">도담하우스 3월 출석 이벤트</p>
+                    <p class="event_day">2022년 3월 1일 ~ 2022년 3월 31일</p>
+                  </div>  
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>    <!--tab e-->
+    </div>
+  </div>  
+ 
+
+  <div id="footer_wrap">   <!--footer s-->
+    <div id="footer">
+      <div class="footer_top">
+        <ul>
+          <li><a href="#">이용약관</a></li>
+          <li>|</li>
+          <li><a href="#">개인정보 처리방침</a></li>
+          <li>|</li>
+          <li><a href="#">이용안내</a></li>
+          <li>|</li>
+          <li><a href="#">공지사항</a></li>
+        </ul>
+      </div>
+      <div class="footer_bottom">
+        <h1 class="footer_logo"><a href="#"><img src="../images/icon/footer_logo.png"></a></h1>
+        <div class="footer_textbox">
+          <p>
+            CEO : HYUNJUNG LEETEL : 010-9596-8299<br>
+            E-MAIL : daenghoney@naver.com<br>
+            ADDRESS : DODAMHOUSE, 26, Jungang-daero, Jung-gu, Busan, Republic of Korea<br>
+            BUSINESS LICENCE : 123-45-67890<br>
+            MAIL ORDER LICENSE : 제2022-부산중구-12345호<br>
+          </p>
+          <p>Copyright ⓒ 2022 BY DODAMHOUSE All rights reserved.</p>
+        </div>
+        <div class="footer_iconbox">
+          <ul>
+            <li><a href="#"><img src="../images/icon/footer_icon_kakao.png"></a></li>
+            <li><a href="#"><img src="../images/icon/footer_icon_insta.png"></a></li>
+            <li><a href="#"><img src="../images/icon/footer_icon_twitter.png"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>   <!--footer e-->
+
+  </div>
+</body>
+</html>

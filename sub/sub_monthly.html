@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1380">
+  <title>도담하우스</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+  <link href="../css/style_monthly.css" rel="stylesheet" type="text/css">
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="../js/script_monthly.js"></script>
+
+  <!--AOS-->
+  <link rel="stylesheet" href="../css/aos/aos.css">
+  <script src="../js/aos/aos.js"></script>
+  
+  <!--슬라이드배너CSS-->
+  <link href="../css/banner/slide_autoplay.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../css/banner/swiper.css">
+  
+  <!--오토슬라이드-->
+  <link rel="stylesheet" type="text/css" href="../js/autoslide/slick.css">
+  <link rel="stylesheet" type="text/css" href="../js/autoslide/slick-theme_.css">
+  <link rel="stylesheet" type="text/css" href="../css/autoslide/style.css">
+ 
+  
+  <!--슬라이드배너js-->
+  <script src="../js/banner/swiper.min.js"></script>
+</head>
+<body>
+  <div id="header_wrap">  <!--header s-->
+    <div id="header">
+      <div class="header_top">
+        <ul id="util">
+          <li><a href="javascript:return false;">LOGIN</a></li>
+          <li><a href="javascript:return false;">JOIN</a></li>
+          <li><a href="javascript:return false;"><img src="../images/icon/icon_mypage.png"></a></li>
+          <li><a href="javascript:return false;"><img src="../images/icon/icon_cart.png"></a></li>
+          <li><a href="javascript:return false;"><img src="../images/icon/icon_search.png"></a></li>
+        </ul>
+      </div>
+      <div class="header_bottom">
+        <h1 class="header_logo"><a href="../index.html"><img src="../images/icon/header_logo.png"></a></h1>
+        <ul id="gnb">
+          <li><a href="../sub/sub_brand.html">BRAND</a></li>
+          <li><a href="../sub/sub_product.html">PRODUCT</a></li>
+          <li><a href="../sub/sub_class.html">CLASS</a></li>
+          <li><a href="../sub/sub_event.html">EVENT</a></li>
+          <li><a href="../sub/sub_monthly.html">DODAM-KIT</a></li>
+        </ul>
+        <div class="submenu_wrap">
+          <div class="submenu">
+            <div class="submenu_right">
+              <ul class="brand_sub">
+                <li><a href="../sub/sub_brand.html">BRAND STORY</a></li>
+                <li><a href="../sub/sub_brand.html">SUPPORT</a></li>
+              </ul>
+            
+              <ul class="product_sub">
+                <li><a href="../sub/sub_product.html">ALL</a></li>
+                <li><a href="../sub/sub_product.html">FOOD</a></li>
+                <li><a href="../sub/sub_product.html">PRODUCT</a></li>
+                <li><a href="../sub/sub_product.html">ACC</a></li>
+                <li><a href="../sub/sub_product.html">STATIONERY</a></li>
+              </ul>
+              <ul class="class_sub">
+                <li><a href="../sub/sub_class.html">ABOUT</a></li>
+                <li><a href="../sub/sub_class.html">APPLY</a></li>
+              </ul>
+              <ul class="event_sub">
+                <li><a href="../sub/sub_event.html">EVENT</a></li>
+                <li><a href="../sub/sub_event.html">NOTICE</a></li>
+                <li><a href="../sub/sub_event.html">FAQ</a></li>
+              </ul>
+              <ul class="dodamkit_sub">
+                <li><a href="../sub/sub_monthly.html">ABOUT</a></li>
+                <li><a href="../sub/sub_monthly.html">APPLY</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>   <!--header e-->
+
+
+  <div id="banner">
+    <!--배너 고정슬라이드 js 시작-->
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper" style="max-width:100%;">
+        <div class="swiper-slide"><a href="../sub/sub_monthly.html"><img src="../images/main/banner1.jpg" alt="배너1"></a></div>
+        <div class="swiper-slide"><a href="../sub/sub_product.html"><img src="../images/main/banner5.jpg" alt="배너2"></a></div>
+        <div class="swiper-slide"><a href="../sub/sub_event.html"><img src="../images/main/banner2.jpg" alt="배너3"></a></div>
+        <div class="swiper-slide"><a href="../sub/sub_product.html"><img src="../images/main/banner3.jpg" alt="배너4"></a></div>
+        <div class="swiper-slide"><a href="../sub/sub_class.html"><img src="../images/main/banner4.jpg" alt="배너5"></a></div>
+      </div>
+      <!-- 화살표 버튼 -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- 블릿 버튼 -->
+      <div class="swiper-pagination"></div>
+      </div>
+
+     <script>
+     var swiper = new Swiper('.swiper-container', {
+      autoplay: {
+      delay: 2500,//슬라이드 넘어가는 시간
+      disableOnInteraction: false,
+      },
+      loop: true,//슬라이드 무한반복
+      navigation: {//화살표 버튼
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      },
+      pagination: {//블릿 버튼
+      el: '.swiper-pagination',
+      clickable: true,
+      },
+    });
+    </script>
+    <!--배너 고정슬라이드 js 끝-->
+</div><!--main_banner e-->
+
+
+
+<div id="section1_wrap">   <!--section1 s-->
+  <div id="section1">
+    <ul>
+      <li>
+        <div class="box">
+          <div class="box_img">
+            <img src="../images/sub_monthly/sub_monthly_box_img1.jpg">
+          </div>
+          <div class="box_txt">
+            <p class="box_title">
+              이유있는 자신감,<br>
+              수제 간식과 사료
+            </p>
+            <p class="box_contents">
+              반려견이 계속 먹어야 한다면 안심할 수<br>
+              있어야 하죠. 건강과 안정성 모두 갖춘<br>
+              건강한 식품들입니다.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="box">
+          <div class="box_img">
+            <img src="../images/sub_monthly/sub_monthly_box_img2.jpg">
+          </div>
+          <div class="box_txt">
+            <p class="box_title">
+              필요한 만큼<br>
+              원하는 주기에 맞춰
+            </p>
+            <p class="box_contents">
+              정기구독 결제 3일 전 미리 알림이 발송돼요. <br>
+              도담하우스를 쉬어가고 싶은 달에는 <br>
+              발송일을 미루거나 잠깐 정지할 수 있어요.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="box">
+          <div class="box_img">
+            <img src="../images/sub_monthly/sub_monthly_box_img3.jpg">
+          </div>
+          <div class="box_txt">
+            <p class="box_title">
+              선순환을 위한<br>
+              가치 있는 소비
+            </p>
+            <p class="box_contents">
+              도담하우스 B,C 패키지의 경우<br> 
+              수익금 10%가 유기동물 후원에 사용됩니다.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="box">
+          <div class="box_img">
+            <img src="../images/sub_monthly/sub_monthly_box_img4.jpg">
+          </div>
+          <div class="box_txt">
+            <p class="box_title">
+              원하는 대로, 원하는 만큼<br>
+              선택지는 다양하게
+            </p>
+            <p class="box_contents">
+              반려동물의 기호와 급여량에 맞춰<br> 
+              패키지 반영이 가능합니다.<br>
+              변동사항은 마이페이지에서 수정할 수 있어요.
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>   <!--section1 e-->
+
+
+<div id="section2_wrap">   <!--section2 s-->
+  <div id="section2">
+    <div class="review_box review1" data-aos="fade-right" data-aos-duration="1800">
+       <p class="txt_id">“suga****”</p>
+       <p class="review_txt">
+        우리 설탕이는 나이가 많다 보니 관리를 해줘야 하는 곳은 많은데 입이 짧아서 이것 저것 찾아보고 있었는데 도담하우스 정기구독을 건강과 맛까지 챙긴 간식을 주니 너무 좋아해요. 추천입니다!!
+       </p>
+    </div>
+    <div class="review_box review2" data-aos="fade-left" data-aos-duration="1800">
+      <p class="txt_id">“boww****”</p>
+      <p class="review_txt">
+        평소에도 귀여운 다꾸제품 모으는게 취민데 도담하우스 덕분에 제 취미생활은 물론 유기동물 후원까지 할 수 있어서 너무 좋아요! 거기다 스티커 말고도 귀여운게 많아서 눈호강중입니다^_^* 
+      </p>
+   </div>
+   <div class="review_box review3" data-aos="fade-right" data-aos-duration="1800">
+    <p class="txt_id">“12sk****”</p>
+    <p class="review_txt">
+      동네 산책멤버들과 같이 구독중이에요! 희망사항 간식 반영이 잘 되는 편이긴한데 더 골고루 먹여보고 싶어서 다 같이 구독하면서 간식 교환중이에요. 저희집 댕댕이는 도담거만 먹더라구요ㅠㅠ 
+    </p>
+ </div>
+  </div>
+</div>   <!--section2 e-->
+
+
+
+<div id="section3_wrap">   <!--section3 s-->
+  <div id="section3">
+    <div class="membership_title" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1600">
+      <p>정기구독 멤버십</p>
+    </div>
+    <div class="membership_wrap">
+      <ul>
+        <li>
+          <div class="membership_box membership1" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+            <p class="membership_name">해피타임 패키지</p>
+            <img src="../images/sub_monthly/sub_monthly_membership1.png">
+            <p class="membership_contents">
+              수제사료 2종 250g 5회분과<br>
+              수제간식 7회분으로<br>
+              구성된 패키지입니다.
+            </p>
+            <p class="membership_price">월 7,900원</p>
+            <p class="membership_benefit">
+              ● 무료배송 쿠폰 매달 3매 증정<br>
+              ● 반려동물 생일 쿠폰 제공<br>
+              ● 생일케이크 주문시 키트A 제공
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="membership_box membership1" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+            <p class="membership_name">러브타임 패키지</p>
+            <img src="../images/sub_monthly/sub_monthly_membership2.png">
+            <p class="membership_contents">
+              스티커, 마스킹테이프등의<br> 
+              문구류 1종과 잡화 1종이 포함된<br>패키지입니다.
+            </p>
+            <p class="membership_price">월 7,900원</p>
+            <p class="membership_benefit">
+              ● 무료배송 쿠폰 매달 3매 증정<br>
+              ● 반려동물 생일 쿠폰 제공<br>
+              ● 생일케이크 주문시 키트A 제공
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="membership_box membership1" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+            <p class="membership_name">올타임 패키지</p>
+            <img src="../images/sub_monthly/sub_monthly_membership3.png">
+            <p class="membership_contents">
+              해피+러브타임 통합 패키지로<br>
+              문구류 1종과 간식 2종이<br>
+              추가 증정됩니다.
+            </p>
+            <p class="membership_price">월 15,900원</p>
+            <p class="membership_benefit">
+              ● 전 상품 무료 배송<br>
+              ● 상품 구매시 5% 추가 적립<br>
+              ● 미니 생일케이크 제공
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="button monthly_button">신청하기</div>
+  </div>
+</div>   <!--section3 e-->
+
+
+
+<div id="section4_wrap">   <!--section4 s-->
+  <div id="section4">
+    <a href="#">
+      <img src="../images/sub_monthly/sub_monthly_faq-banner.jpg">
+    </a>
+  </div>
+</div>   <!--section4 e-->
+
+
+
+<div id="footer_wrap">   <!--footer s-->
+  <div id="footer">
+    <div class="footer_top">
+      <ul>
+        <li><a href="javascript:return false;">이용약관</a></li>
+        <li>|</li>
+        <li><a href="javascript:return false;">개인정보 처리방침</a></li>
+        <li>|</li>
+        <li><a href="javascript:return false;">이용안내</a></li>
+        <li>|</li>
+        <li><a href="javascript:return false;">공지사항</a></li>
+      </ul>
+    </div>
+    <div class="footer_bottom">
+      <h1 class="footer_logo"><a href="#header"><img src="../images/icon/footer_logo.png"></a></h1>
+      <div class="footer_textbox">
+        <p>
+          CEO : HYUNJUNG LEETEL : 010-9596-8299<br>
+          E-MAIL : daenghoney@naver.com<br>
+          ADDRESS : DODAMHOUSE, 26, Jungang-daero, Jung-gu, Busan, Republic of Korea<br>
+          BUSINESS LICENCE : 123-45-67890<br>
+          MAIL ORDER LICENSE : 제2022-부산중구-12345호<br>
+        </p>
+        <p>Copyright ⓒ 2022 BY DODAMHOUSE All rights reserved.</p>
+      </div>
+      <div class="footer_iconbox">
+        <ul>
+          <li><a href="javascript:return false;"><img src="../images/icon/footer_icon_kakao.png"></a></li>
+          <li><a href="javascript:return false;"><img src="../images/icon/footer_icon_insta.png"></a></li>
+          <li><a href="javascript:return false;"><img src="../images/icon/footer_icon_twitter.png"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>   <!--footer e-->
+
+</div>
+</body>
+
+<script>
+  AOS.init();
+ $("img[src*='cfile'][src^='http']").attr("data-aos", "fade-right", "fade-left");  // 글에 있는 사진만 애니메이션 추가
+</script>
+
+
+</html>
