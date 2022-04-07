@@ -335,6 +335,7 @@ ul.tabs li.current{
   width : 390px;
   height : 1670px;
   float : left;
+  margin-top : 80px;
 }
 
 .tab_cont {
@@ -414,6 +415,7 @@ ul.tabs li.current{
   margin : 0 auto;
   width : 130px;
   height : 40px;
+  margin-top : 130px;
 }
 
 .class_btn {
@@ -424,6 +426,7 @@ ul.tabs li.current{
   text-align: center;
   padding-top : 7px;
   margin-top : 60px;
+  box-sizing: border-box;
 }
 
 .class_btn a {
